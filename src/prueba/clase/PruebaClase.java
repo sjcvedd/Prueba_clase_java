@@ -1,20 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package prueba.clase;
 
-/**
- *
- * @author Silvestre
- */
+class examen{
+    void ejercicio1 (){
+        int[] arreglo = new int[8];
+        for (int i = 0; i < arreglo.length; i++) {
+            arreglo[i] = i*3;
+            System.out.println(arreglo[i]);
+        }
+        int sumatoria = 0;
+        for (int i = 0; i < arreglo.length; i++) {
+            sumatoria += arreglo[i];
+        }
+        System.out.println("el resultado de la sumatoria es: " + sumatoria);
+    }
+}
+
 public class PruebaClase {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        examen ex = new examen();
+        ex.ejercicio1();
     }
     
 }
